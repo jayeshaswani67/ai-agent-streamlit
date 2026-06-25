@@ -1,18 +1,26 @@
 import streamlit as st
+import streamlit as st
 from groq import Groq
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
+# Local .env
 api_key = os.getenv("GROQ_API_KEY")
 
-client = Groq(api_key=api_key)
+# Streamlit Cloud Secrets
+if not api_key:
+    api_key = st.secrets.get("GROQ_API_KEY")
 
+if not api_key:
+    st.error("Groq API Key not found!")
+    st.stop()
+
+client = Groq(api_key=api_key)
 st.set_page_config(
     page_title="AI Agent",
-    page_icon=""
+    page_icon="🤖"
 )
 
 st.title("Simple AI Agent")

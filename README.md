@@ -1,57 +1,115 @@
-# AI Agent using Streamlit + Groq
+# 🤖 AI Agent using Streamlit + Groq
 
-A simple AI Chat Agent built using Python, Streamlit and Groq API.
+An AI-powered chatbot built with Python, Streamlit, and the Groq API. The application provides real-time conversational responses with chat history support and a clean web interface.
 
-## Features
+## 🚀 Live Demo
 
-- Real-time AI Chat
-- Conversation Memory
-- Fast Responses
-- Secure API Keys
-- Clean UI
+🔗 https://ai-agent-app-i8fgd7fxqmz6wu2ypser37.streamlit.app/
 
-## Technologies
+## 📸 Preview
 
-- Python
-- Streamlit
-- Groq API
-- dotenv
+Add screenshots of your application here.
 
-## Installation
+```text
+assets/
+├── Screenshot(293).png
+└── Screenshot(294).png
+```
+
+## ✨ Features
+
+* Real-time AI Chat
+* Conversation Memory
+* Fast Responses using Groq LLMs
+* Secure API Key Management
+* Responsive Streamlit Interface
+* Easy Deployment with Streamlit Cloud
+
+## 🛠️ Tech Stack
+
+* Python
+* Streamlit
+* Groq API
+* python-dotenv
+
+## 📂 Project Structure
+
+```text
+ai-agent-streamlit/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── docs/
+    └── documentation.md
+```
+
+## ⚙️ Installation
+
+### Clone the Repository
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/jayeshaswani67/ai-agent-streamlit.git
 cd ai-agent-streamlit
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create .env:
+### Configure Environment Variables
+
+Create a `.env` file:
 
 ```env
-GROQ_API_KEY=your_api_key
+GROQ_API_KEY=your_groq_api_key
 ```
 
-Run application:
+### Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-## Models
+The application will be available at:
 
-- Llama 3.3 70B
-- Mixtral
-- Gemma
+```text
+http://localhost:8501
+```
 
-## Future Improvements
+## 🧠 Supported Models
 
-- Voice Agent
-- PDF Chat
-- Web Search
-- RAG System
-- Multi-Agent Support
+* Llama 3.3 70B Versatile
+* Mixtral
+* Gemma
+
+## 🔒 Security
+
+* API keys are stored using Streamlit Secrets or environment variables.
+* `.env` files are excluded using `.gitignore`.
+* Never commit API keys to GitHub.
+
+## 📈 Future Improvements
+
+* Voice-enabled AI Agent
+* PDF Document Chat
+* Web Search Integration
+* RAG (Retrieval-Augmented Generation)
+* Multi-Agent System
+* User Authentication
+* Chat Export Feature
+
+## 👨‍💻 Author
+
+Jayesh
+
+BCA Student | Full Stack Developer | AI Enthusiast
+
+Building projects in AI, Web Development, and Software Engineering.
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
